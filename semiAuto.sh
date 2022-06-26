@@ -5,9 +5,10 @@ git checkout $1
 d=$(git log -n 1 --pretty=format:"%ad")
 m=$(git log -n 1 --pretty=format:"%s")
 
-cp -r * ../meta-hockey-contracts/
+cp -r * ../game-unity/
 
-cd ../meta-hockey-contracts/
+cd ../game-unity/
 setTime.sh "$d" "$m"
 
-cd ../nft-hockey-game/
+cd ../nft-hockey-game-unity/
+
